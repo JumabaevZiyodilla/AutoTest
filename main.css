@@ -115,10 +115,7 @@ option{
     border: 2px solid #000;
     border-radius: 25px;
 }
-.question-item:hover{
-    transform: scale(1.1);
-    transition: all 0.3s ease;
-}
+
 
 .vis {
     visibility: hidden;
