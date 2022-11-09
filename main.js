@@ -28,11 +28,11 @@ let elUserBall = document.querySelector(".user-ball-js");
 let elCanvas = document.querySelector(".canvas");
 
 // MP3 AUDIO BERISH UCHUN YASAB OLYAPMIZ
-ringtoneTrue = new Audio("./true.mp3");
-ringtoneFalse = new Audio("./false.mp3");
-ringtoneStart = new Audio("./bismillah.mp3");
-gameWin = new Audio("./gamewin.mp3");
-gameOver = new Audio("./gameoverr.mp3");
+ringtoneTrue = new Audio("./mp4/true.mp3");
+ringtoneFalse = new Audio("./mp4/false.mp3");
+ringtoneStart = new Audio("./mp4/bismillah.mp3");
+gameWin = new Audio("./mp4/gamewin.mp3");
+gameOver = new Audio("./mp4/gameoverr.mp3");
 
 
 // FUNKSIYA NI VAQT BERISH UCHUN  OCHYAPMIZ
@@ -46,7 +46,7 @@ const initTimer = (maxTime) => {
             timerText.textContent = `${Math.floor(maxTime / 60)}: ${maxTime % 60 > 9 ? maxTime % 60 : sec}`;
         } else {
             elCanvas.innerHTML = `
-            <video class="video" src="./gameover.mp4" autoplay loop></video>
+            <video class="video" src="./mp4/gameover.mp4" autoplay loop></video>
             ${gameOver.play()}
             <div class="d-flex justify-content-between align-items-center reset-box">
               <div>
@@ -181,7 +181,7 @@ elQuestionList.addEventListener("click", function (evt) {
 
             if (user.falseAnswer == 0) {
                 elCanvas.innerHTML = `
-                <video class="video" src="./gameover.mp4" autoplay loop></video>
+                <video class="video" src="./mp4/gameover.mp4" autoplay loop></video>
                 ${gameOver.play()}
                 <div class="d-flex justify-content-between align-items-center reset-box">
                     <div>
@@ -201,7 +201,7 @@ elQuestionList.addEventListener("click", function (evt) {
         // O'YIN TUGAGAN HOLATI
         if (testLevel.length == 0) {
             elCanvas.innerHTML = `
-            <video class="video" src="./win.mp4" autoplay loop></video>
+            <video class="video" src="./mp4/win.mp4" autoplay loop></video>
             ${gameWin.play()}
             <div class="d-flex justify-content-between align-items-center reset-box">
                 <div>
