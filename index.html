@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./main.css">
+  <title> Exam - 5 || Road Signs</title>
+</head>
+
+<body>
+  <!-- Your Code Here -->
+  <main>
+    <section>
+      <h1 class="visually-hidden">Auto test</h1>
+      <div class="container">
+        <div class="d-flex justify-content-center">
+          <div class="login-box">
+            <form class="d-flex flex-column test-form" method="post" autocomplete="off">
+              <select class="mb-5 p-3 rounded-3 test-level">
+                <option value="20">Easy</option>
+                <option value="40">Medium</option>
+                <option value="60">Hard</option>
+              </select>
+              <select class="mb-3 p-3 rounded-3 test-time">
+                <option value="180">03:00</option>
+                <option value="300">05:00</option>
+                <option value="600">10:00</option>
+              </select>
+              <button class="btn btn-primary" type="submit" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                aria-controls="offcanvasTop">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Start test</button>
+            </form>
+            
+          </div>
+          <div class="offcanvas offcanvas-top canvas" tabindex="-1" id="offcanvasTop"
+            aria-labelledby="offcanvasTopLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="mx-auto mb-5 p-3 text-center user-box">
+              <p class="user-minut"><span class="user-minut-js"></span></p>
+              <p class="user-allask"><span class="user-allask-js"></span></p>
+              <p class="user-true">Correct answer: <span class="user-true-js"></span></p>
+              <p class="user-false">Amount chance: <span class="user-false-js"></span></p>
+              <p class="user-ball">All points: <span class="user-ball-js"></span></p>
+              <p class="mb-0 timer">Time left: <span class="timer-js"></span></p>
+            </div>
+            <p class="mx-auto mb-4 text-center question-text"></p>
+            <ul class="d-flex justify-content-between flex-wrap mx-auto list-unstyled question-list">
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- JavaScript Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+  </script>
+  <!-- Kerakli Array shu fileda -->
+  <script src="./signs.js"></script>
+  <!-- Code yoziladigan js file shu -->
+  <script src="./main.js"></script>
+</body>
+
+</html>
